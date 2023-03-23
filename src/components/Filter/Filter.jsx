@@ -1,11 +1,11 @@
 import { useDispatch, useSelector } from 'react-redux';
-import { getContactFilter } from 'redux/selectors';
-import { setContactFilter } from 'redux/filterSlice';
+import { selectContactFilter } from 'redux/filter/selectors';
+import { setContactFilter } from 'redux/filter/slice';
 import { Wrapper, Label, Input } from './Filter.styled';
 
 export const Filter = () => {
   const dispatch = useDispatch();
-  const filter = useSelector(getContactFilter);
+  const filter = useSelector(selectContactFilter);
 
   return (
     <Wrapper>
@@ -15,8 +15,13 @@ export const Filter = () => {
         type="text"
         id="filter"
         value={filter}
+        placeholder={' '}
         onChange={e => dispatch(setContactFilter(e.currentTarget.value))}
       />
     </Wrapper>
   );
 };
+
+
+
+

@@ -1,5 +1,10 @@
-/* @import-normalize; */
+@import-normalize;
 /* bring in normalize.css styles */
+
+
+* {
+  box-sizing: border-box;
+}
 
 body {
   margin: 0;
@@ -7,7 +12,12 @@ body {
     'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: hsl(187, 95%, 78%);
+  background: linear-gradient(180deg, hsl(187, 95%, 78%) 0%, hsl(61, 78%, 65%) 100%);
+  /* background-color: hsl(187, 95%, 78%);  */
+  /* background-color: hsl(61, 78%, 65%); */
+  min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 code {
@@ -39,4 +49,9 @@ img {
   --good: rgba(96, 205, 74, 0.7);
   --neutral: rgba(205, 185, 74, 0.7);
   --bad: rgba(205, 87, 74, 0.7);
+}
+
+#root {
+  padding: 20px 0;
+  flex: 1;
 }
