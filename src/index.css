@@ -13,8 +13,6 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background: linear-gradient(180deg, hsl(187, 95%, 78%) 0%, hsl(61, 78%, 65%) 100%);
-  /* background-color: hsl(187, 95%, 78%);  */
-  /* background-color: hsl(61, 78%, 65%); */
   min-height: 100vh;
     display: flex;
     flex-direction: column;
